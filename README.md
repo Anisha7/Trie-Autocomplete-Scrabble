@@ -102,6 +102,7 @@ This will show you the time it took to set up the Trie, to find the words, and t
 
 ### Finding words with prefix 'axl'
 
+####Testing Trie: 
 Run the following command:
 `python TestTrie.py axl`
 
@@ -116,6 +117,7 @@ Total time elapsed: 5.717160 sec
 ```
 
 ---- 
+####Testing DictTrie: 
 Run the following command:
 `python TestDictTrie.py axl`
 You should get this result:
@@ -132,6 +134,7 @@ Total time elapsed: 2.798787 sec
 
 ### Finding words with prefix 'apple'
 
+####Testing Trie: 
 Run the following command:
 `python TestTrie.py apple`
 
@@ -147,6 +150,7 @@ Total time elapsed: 6.100618 sec
 ```
 
 ----
+####Testing DictTrie: 
 Run the following command:
 `python TestDictTrie.py apple`
 
@@ -163,6 +167,7 @@ Total time elapsed: 2.885178 sec
 
 ### Finding words with prefix 'zebra'
 
+####Testing Trie: 
 Run the following command:
 `python TestTrie.py zebra`
 
@@ -177,6 +182,7 @@ Total time elapsed: 5.750790 sec
 ```
 
 ----
+####Testing DictTrie: 
 Run the following command:
 `python TestTrie.py zebra`
 
@@ -193,8 +199,9 @@ Total time elapsed: 2.877185 sec
 
 ### Finding words with prefix 'code'
 
+####Testing Trie: 
 Run the following command:
-`python autocomplete.py code`
+`python TestTrie.py code`
 
 You should get this result:
 ```
@@ -207,8 +214,9 @@ Autocomplete time:  0.000037 sec
 Total time elapsed: 5.750766 sec
 ```
 ----
+####Testing DictTrie: 
 Run the following command:
-`python autocomplete.py code`
+`python TestDictTrie.py code`
 
 You should get this result
 ```
