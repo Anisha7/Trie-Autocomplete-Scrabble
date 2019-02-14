@@ -32,7 +32,7 @@ class Trie(object):
 This implementation uses dictionaries to create a trie. Refer to my [medium post](https://medium.com/nyc-design/the-secret-to-always-winning-at-scrabble-4f27843d9c44) for a visual explanation.
 
 # Autocomplete
-This is implemented by using the trie to find words that begin with a certain prefix. This is done through the search function inside the Trie class.
+This is implemented by using the trie to find words that begin with a certain prefix. This is done through the search function inside the Trie and DictTrie classes.
 
 # Scrabble
 This is implemented by using the trie to find words that begin with a certain prefix and uses only the letters that a player has in their hand (provided by the player)
@@ -50,8 +50,10 @@ This will show you the time it took to set up the Trie, to find the words, and t
 
 ### Finding words with prefix 'apple'
 
+Run the following command:
 `python TestTrie.py apple`
 
+You should get this result:
 ```
 Vocabulary size: 235886
 Completions of apple: apple, appleberry, appleblossom, applecart, appledrane, applegrower, applejack, applejohn, applemonger, 
@@ -64,8 +66,10 @@ Total time elapsed: 6.100618 sec
 
 ### Finding words with prefix 'zebra'
 
+Run the following command:
 `python TestTrie.py zebra`
 
+You should get this result:
 ```
 Vocabulary size: 235886
 Completions of zebra: zebra, zebraic, zebralike, zebrawood
@@ -77,8 +81,10 @@ Total time elapsed: 5.750790 sec
 
 ### Finding words with prefix 'code'
 
+Run the following command:
 `python autocomplete.py code`
 
+You should get this result:
 ```
 Vocabulary size: 235886
 Completions of code: code, codebtor, codeclination, codecree, codefendant, codeine, codele, codelight, codelinquency, codelinq
