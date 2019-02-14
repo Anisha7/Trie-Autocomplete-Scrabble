@@ -95,6 +95,36 @@ This will show you the time it took to set up the Trie, to find the words, and t
 
 ## Examples: 
 
+### Finding words with prefix 'axl'
+
+Run the following command:
+`python TestTrie.py axl`
+
+You should get this result:
+```
+Vocabulary size: 235886
+Completions of axl: axle, axled, axlesmith, axletree
+()
+Initial setup time: 5.717141 sec
+Autocomplete time:  0.000019 sec
+Total time elapsed: 5.717160 sec
+```
+
+---- 
+Run the following command:
+`python TestDictTrie.py axl`
+You should get this result:
+
+```
+Vocabulary size: 235886
+Completions of axl: axle, axlesmith, axled, axletree
+()
+Initial setup time: 2.798699 sec
+Autocomplete time:  0.000088 sec
+Total time elapsed: 2.798787 sec
+```
+----
+
 ### Finding words with prefix 'apple'
 
 Run the following command:
@@ -111,6 +141,21 @@ Autocomplete time:  0.000053 sec
 Total time elapsed: 6.100618 sec
 ```
 
+----
+Run the following command:
+`python TestDictTrie.py apple`
+
+You should get this result:
+```
+Vocabulary size: 235886
+Completions of apple: apple, applecart, appleberry, appleblossom, appledrane, applegrower, applejack, applejohn, applemonger, applenut, applesauce, appleringy, appleroot, applewife, applewoman
+()
+Initial setup time: 2.885114 sec
+Autocomplete time:  0.000064 sec
+Total time elapsed: 2.885178 sec
+```
+----
+
 ### Finding words with prefix 'zebra'
 
 Run the following command:
@@ -125,6 +170,21 @@ Initial setup time: 5.750774 sec
 Autocomplete time:  0.000016 sec
 Total time elapsed: 5.750790 sec
 ```
+
+----
+Run the following command:
+`python TestTrie.py zebra`
+
+You should get this result:
+```
+Vocabulary size: 235886
+Completions of zebra: zebra, zebraic, zebrawood, zebrass, zebralike
+()
+Initial setup time: 2.877124 sec
+Autocomplete time:  0.000061 sec
+Total time elapsed: 2.877185 sec
+```
+----
 
 ### Finding words with prefix 'code'
 
@@ -141,11 +201,28 @@ Initial setup time: 5.750729 sec
 Autocomplete time:  0.000037 sec
 Total time elapsed: 5.750766 sec
 ```
+----
+Run the following command:
+`python autocomplete.py code`
+
+You should get this result
+```
+Vocabulary size: 235886
+Completions of code: code, codecree, codeclination, codebtor, codefendant, codeine, codelight, codelinquency, codelinquent, codeless, codenization, codeposit, codespairer, codescendant, coder, coderive, codex
+()
+Initial setup time: 2.847954 sec
+Autocomplete time:  0.000067 sec
+Total time elapsed: 2.848021 sec
+```
+----
+
+### As we can see, the trie implemented using dictionaries is much faster.
 
 # Testing Autocomplete in the terminal
 
 Run the following command in your terminal:
 `python Trie.py`
+Follow the instructions that are displayed in the terminal to use autocomplete.
 
 # Using Scrabble Helper
 
