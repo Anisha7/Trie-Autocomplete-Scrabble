@@ -1,6 +1,8 @@
 # Trie-Autocomplete-Scrabble
 
-This repository consists of two versions of a trie, a version of autocomplete, and a scrabble helper.
+This repository consists of two versions of a trie, a version of autocomplete, and a scrabble helper. 
+
+In order to use or test the code (using the below instructions), clone or download the repository.
 
 # Trie
 This implementation consists of a data-structural approach to a trie, using nodes and arrays.
