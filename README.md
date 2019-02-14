@@ -226,3 +226,6 @@ Follow the instructions that are displayed in the terminal to use autocomplete.
 
 # Using Scrabble Helper
 
+Run the following command in your terminal:
+`python Scrabble.py`
+Follow the instructions that are displayed in the terminal to use autocomplete.
