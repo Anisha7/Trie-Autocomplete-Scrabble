@@ -102,7 +102,7 @@ This will show you the time it took to set up the Trie, to find the words, and t
 
 ### Finding words with prefix 'axl'
 
-####Testing Trie: 
+Testing Trie: 
 Run the following command:
 `python TestTrie.py axl`
 
