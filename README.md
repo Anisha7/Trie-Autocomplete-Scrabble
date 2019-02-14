@@ -8,7 +8,7 @@ This implementation consists of a data-structural approach to a trie, using node
 ## Method Header:
 
 ```
-// Can provide a list of words upon initialization
+// Provide a list of words upon initialization
 class Trie(object):
     
     // add a word to trie
@@ -31,11 +31,58 @@ class Trie(object):
 # DictTrie
 This implementation uses dictionaries to create a trie. Refer to my [medium post](https://medium.com/nyc-design/the-secret-to-always-winning-at-scrabble-4f27843d9c44) for a visual explanation.
 
+## Method Header:
+```
+// Provide a list of words upon initialization
+class Trie(object):
+    
+    // add a word to trie
+    def add(word)
+
+    // remove a word from trie
+    def remove(word)
+
+    // find if a word exists in trie
+    def find(word)
+
+    // search all words with a prefix
+    def search(prefix)
+
+```
 # Autocomplete
 This is implemented by using the trie to find words that begin with a certain prefix. This is done through the search function inside the Trie and DictTrie classes.
 
+## Method Header:
+```
+class Trie(object):
+
+    // search all words with a prefix
+    def search(prefix)
+
+    // search all words with a prefix and how many times they occured
+    def searchAndCount(prefix)
+
+class DictTrie(object):
+
+    // search all words with a prefix
+    def search(prefix)
+
+    // search all words with a prefix and how many times they occured
+    def searchAndCount(prefix)
+```
+
 # Scrabble
 This is implemented by using the trie to find words that begin with a certain prefix and uses only the letters that a player has in their hand (provided by the player)
+
+## Method Header:
+```
+// Provide a list of words upon initialization to setup a trie with scrabble words
+class Scrabble(object):
+    
+    // search all words with a prefix and only the letters given
+    def findWords(prefix, letters)
+
+```
 
 # Testing Trie and DictTrie with time (A Comparison)
 In order to test the trie, run test.py by entering

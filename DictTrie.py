@@ -7,7 +7,8 @@ class DictTrie(object):
             word = word.strip('\n')
             word = word.strip('\r\n')
             self.add(word.strip('\n').lower())
-
+    
+     # MAIN HEADER FUNCTION TO ADD WORDS TO A TRIE
     def add(self, word):
         curr = self.d
         for i in range(len(word)):
@@ -36,6 +37,13 @@ class DictTrie(object):
                 return self.findNode(prefix[1:], node[key])
         return None
 
+    # MAIN HEADER FUNCTION TO CHECK IF WORD EXISTS IN A TRIE
+    def find(self, word):
+        node = self.findNode(word, self.head)
+        if (node.isWord == True):
+            return True
+        return False
+
     def findWordsHelper(self, prefix, node, result):
         if (node['isWord'] == True):
             result.append(prefix)
@@ -55,12 +63,17 @@ class DictTrie(object):
         self.findWordsHelper(prefix, node, result)
         return result
 
+    # MAIN HEADER FUNCTION TO REMOVE WORDS TO A TRIE
     def remove(self, word):
         node = self.findNode(word, self.d)
         if (node != None):
             node['isWord'] = False
         return
-        
+
+    # MAIN HEADER FUNCTION TO GET WORDS WITH A PREFIX
+    def search(self, prefix):
+        return self.findWordsWithPrefix(prefix)
+
 
 def gameLoop(trie):
     gameLoop = True
