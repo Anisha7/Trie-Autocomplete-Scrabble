@@ -1,4 +1,5 @@
 # Trie-Autocomplete-Scrabble
+
 This repository consists of two versions of a trie, a version of autocomplete, and a scrabble helper.
 
 # Trie
