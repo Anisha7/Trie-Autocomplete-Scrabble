@@ -3,7 +3,9 @@
 This repository consists of two versions of a trie, a version of autocomplete, and a scrabble helper. 
 
 # Set up
-In order to use or test the code (using the below instructions), clone or download the repository.
+In order to use or test the code (using the below instructions), clone or download the repository. Then cd to the directory of the downloaded folder in your terminal.
+
+`cd /path/to/file`
 
 # Trie
 This implementation consists of a data-structural approach to a trie, using nodes and arrays.
