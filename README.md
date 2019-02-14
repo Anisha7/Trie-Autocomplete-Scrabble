@@ -2,6 +2,7 @@
 
 This repository consists of two versions of a trie, a version of autocomplete, and a scrabble helper. 
 
+# Set up
 In order to use or test the code (using the below instructions), clone or download the repository.
 
 # Trie
